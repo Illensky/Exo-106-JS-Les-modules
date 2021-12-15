@@ -1,4 +1,4 @@
-export {createDiv, createLabel, createInput}
+export {createDiv, createLabel, createInput};
 
 function createDiv (htmlContent, cssClass) {
     const div = document.createElement("div");
@@ -19,7 +19,7 @@ function createInput (type, value, cssClass, id) {
 function createLabel (idFor, labelText, cssClass) {
     const label = document.createElement("label");
     label.innerHTML = labelText;
-    label.for = idFor;
+    label.setAttribute("for", idFor);
     label.classList = cssClass;
     return label
 }

@@ -1,9 +1,9 @@
-import * as utils from "./HTML";
+import {createDiv,createLabel,createInput} from "./HTML.js";
 
 const result = document.querySelector("#result");
 
-result.appendChild(utils.createDiv("blabla", "osef"));
-result.appendChild(utils.createLabel("mail", "E-mail : ", "osef"));
-result.appendChild(utils.createInput("email", "adress@mail.fr", "osef", "mail"));
-result.appendChild(utils.createLabel("pass", "Mot de passe : ", "osef"));
-result.appendChild(utils.createInput("password", "****", "osef", "pass"));
+result.appendChild(createDiv("blabla", "osef"));
+result.appendChild(createLabel("mail", "E-mail : ", "osef"));
+result.appendChild(createInput("email", "adress@mail.fr", "osef", "mail"));
+result.appendChild(createLabel("pass", "Mot de passe : ", "osef"));
+result.appendChild(createInput("password", "****", "osef", "pass"));
